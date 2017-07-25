@@ -1,4 +1,4 @@
-package com.qcc.pro1_10.pro1;
+package com.qcc.pro01_10;
 
 /**
  * 【程序1】
@@ -26,16 +26,16 @@ public class Pro1 {
     }
 
     /*递归效率低*/
-    public static int fun(int num){
-        if(num ==1 || num==2) return 1;
-        return fun(num-1) + fun(num-2);
+    public static int fun(int num) {
+        if (num == 1 || num == 2) return 1;
+        return fun(num - 1) + fun(num - 2);
     }
 
     /*递归转循环实现*/
-    public static int fun2(int num){
-        if(num==1 || num==2) return 1;
-        int f1=1,f2=1,result=0;
-        for(int i=3; i<=num; i++){
+    public static int fun2(int num) {
+        if (num == 1 || num == 2) return 1;
+        int f1 = 1, f2 = 1, result = 0;
+        for (int i = 3; i <= num; i++) {
             result = f1 + f2;
             f1 = f2;
             f2 = result;
@@ -44,8 +44,8 @@ public class Pro1 {
     }
 
 
-    public static void method(int num){
-        for (int i=0; i<num; i++){
+    public static void method(int num) {
+        for (int i = 0; i < num; i++) {
             System.out.println(i);
         }
     }
